@@ -170,6 +170,54 @@
       <max-dist>1000</max-dist>
     </engine>
 
+<!-- engine RH augmenter internal-view -->
+    <engine>
+      <name>engine loop RH augmenter internal</name>
+      <mode>looped</mode>
+      <path>Aircraft/F-15DJ_ADTW/Sounds/exhaust_start.wav</path>
+     <condition>
+        <property>/sim/current-view/internal</property>
+        <equals>
+        <property>/instrumentation/doors/crew/position-norm</property>
+        <value> 0 </value>
+        </equals>
+      </condition>
+      <volume>
+        <property>/engines/engine[0]/afterburner</property>h
+        <factor type="double">0.1</factor>
+      </volume>
+      <pitch>
+        <property>/engines/engine[0]/afterburner</property>
+        <factor>5</factor>
+      </pitch>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </engine>
+
+<!-- engine RH augmenter internal2-view -->
+    <engine>
+      <name>engine loop RH augmenter internal2</name>
+      <mode>looped</mode>
+      <path>Aircraft/F-15DJ_ADTW/Sounds/rattleroll.wav</path>
+     <condition>
+        <property>/sim/current-view/internal</property>
+        <equals>
+        <property>/instrumentation/doors/crew/position-norm</property>
+        <value> 0 </value>
+        </equals>
+      </condition>
+      <volume>
+        <property>/engines/engine[0]/afterburner</property>h
+        <factor type="double">1</factor>
+      </volume>
+      <pitch>
+        <property>/engines/engine[0]/afterburner</property>
+        <factor>1</factor>
+      </pitch>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </engine>
+
 
 <!-- engine RH nozzle around-view -->
     <engine>
@@ -358,6 +406,54 @@
       <max-dist>1000</max-dist>
     </engine>
 
+
+<!-- engine LH augmenter internal-view -->
+    <engine>
+      <name>engine loop LH augmenter internal</name>
+      <mode>looped</mode>
+      <path>Aircraft/F-15DJ_ADTW/Sounds/exhaust_start.wav</path>
+     <condition>
+        <property>/sim/current-view/internal</property>
+        <equals>
+        <property>/instrumentation/doors/crew/position-norm</property>
+        <value> 0 </value>
+        </equals>
+      </condition>
+      <volume>
+        <property>/engines/engine[1]/afterburner</property>h
+        <factor type="double">0.1</factor>
+      </volume>
+      <pitch>
+        <property>/engines/engine[1]/afterburner</property>
+        <factor>5</factor>
+      </pitch>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </engine>
+
+<!-- engine LH augmenter internal2-view -->
+    <engine>
+      <name>engine loop LH augmenter internal2</name>
+      <mode>looped</mode>
+      <path>Aircraft/F-15DJ_ADTW/Sounds/rattleroll.wav</path>
+     <condition>
+        <property>/sim/current-view/internal</property>
+        <equals>
+        <property>/instrumentation/doors/crew/position-norm</property>
+        <value> 0 </value>
+        </equals>
+      </condition>
+      <volume>
+        <property>/engines/engine[1]/afterburner</property>h
+        <factor type="double">1</factor>
+      </volume>
+      <pitch>
+        <property>/engines/engine[1]/afterburner</property>
+        <factor>1</factor>
+      </pitch>
+      <reference-dist>100</reference-dist>
+      <max-dist>1000</max-dist>
+    </engine>
 
 <!-- engine LH nozzle around-view -->
     <engine>

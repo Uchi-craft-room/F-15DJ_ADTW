@@ -4,6 +4,26 @@
 
   <path>F-15DJ_ADTW.ac</path>
 
+ <!-- Canopy -->
+    <animation>
+        <type>select</type>
+        <condition>
+            <not>
+                <property>/sim/rendering/rembrandt/enabled</property>
+            </not>
+        </condition>
+        <object-name>CanopyGlassInside</object-name>
+        <object-name>WindscreenGlassInside</object-name>
+    </animation>
+
+
+<!-- Uncomment this section for FG 3.5 ALS Glass effects -->
+    <effect>
+        <inherits-from>Effects/glass</inherits-from>
+        <object-name>WindscreenGlassInside</object-name>
+        <object-name>CanopyGlassInside</object-name>
+    </effect>
+
 
   <animation>
     <type>shader</type>
@@ -14,6 +34,15 @@
     <object-name>mirror</object-name>
     <object-name>landinglight-lenz</object-name>
     <object-name>taxinglight-lenz</object-name>
+  </animation>
+
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>glass_shader.png</texture>
+        <object-name>WindscreenGlassInside</object-name>
+        <object-name>CanopyGlassInside</object-name>
   </animation>
 
   <animation>
@@ -109,6 +138,8 @@
     <object-name>canopy-glass-RR</object-name>
     <object-name>landinglight-lenz</object-name>
     <object-name>taxinglight-lenz</object-name>
+        <object-name>CanopyGlassInside</object-name>
+        <object-name>WindscreenGlassInside</object-name>
   </animation>
 
 
@@ -1326,6 +1357,7 @@
     <object-name>canopy-glass-RR</object-name>
     <object-name>canopy-frame-RR</object-name>
     <object-name>CANOPYFUNCTION</object-name>
+        <object-name>CanopyGlassInside</object-name>
   </animation>
 
   <animation>
