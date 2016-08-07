@@ -16,6 +16,7 @@
    <and>
      <not>
      <property>gear/gear[0]/wow</property>
+     <property>/sim/model/lights/sbc1/state</property>
      </not>
      <less-than>
 	   <property>systems/electrical/volts</property>

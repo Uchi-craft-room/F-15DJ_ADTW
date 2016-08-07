@@ -18,6 +18,7 @@
 	   <property>systems/electrical/volts</property>
 	   <value>24</value>
      </greater-than>
+     <property>/sim/model/lights/sbc1/state</property>
       <greater-than>
         <property>/instrumentation/doors/crew/position-norm</property>
         <value> 0.01 </value>

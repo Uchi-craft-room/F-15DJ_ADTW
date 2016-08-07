@@ -209,7 +209,7 @@
   <gear x="-1.085" y="1.537" z="-2.280"
         retract-time="3"
         compression="0.3"
-        spring="0.17"
+        spring="0.3"
         damp="1"
         initial-load="0"
         sfric ="0.8">
@@ -223,7 +223,7 @@
   <gear x="-1.085" y="-1.537" z="-2.280"
         retract-time="3"
         compression="0.3"
-        spring="0.17"
+        spring="0.3"
         damp="1"
         initial-load="0"
         sfric ="0.8">

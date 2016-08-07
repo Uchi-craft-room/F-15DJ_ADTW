@@ -275,10 +275,16 @@
     <type>select</type>
     <object-name>shadowOSG</object-name>
     <condition>
+      <and>
       <equals>
         <property>/sim/rendering/rembrandt/enabled</property>
         <value>false</value>
       </equals>
+      <equals>
+        <property>/sim/replay/replay-state</property>
+        <value>0</value>
+      </equals>
+      </and>
     </condition>
   </animation>
 
@@ -1350,6 +1356,38 @@
       <z>  0 </z>
     </axis>
   </animation>
+
+
+
+<!-- effect -->
+   <model>
+    <path>Aircraft/F-15DJ_ADTW/Models/Effects/splash/right-splash.xml</path>
+    <offsets>
+      <x-m>  1.085 </x-m>
+      <y-m>  1.547 </y-m>
+      <z-m> -1.861 </z-m>
+    </offsets>
+  </model>
+
+   <model>
+    <path>Aircraft/F-15DJ_ADTW/Models/Effects/splash/left-splash.xml</path>
+    <offsets>
+      <x-m>  1.085 </x-m>
+      <y-m> -1.547 </y-m>
+      <z-m> -1.861 </z-m>
+    </offsets>
+  </model>
+
+   <model>
+    <path>Aircraft/F-15DJ_ADTW/Models/Effects/splash/front-splash.xml</path>
+    <offsets>
+      <x-m>  -4.380 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -2.007 </z-m>
+    </offsets>
+  </model>
+
+
 
   <!-- Canopy -->
   <animation>
