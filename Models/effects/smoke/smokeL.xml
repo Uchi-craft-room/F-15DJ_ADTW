@@ -11,7 +11,7 @@
 
     <condition>
         <greater-than>
-          <property>/engines/engine[1]/n2</property>
+          <property>engines/engine[1]/n2</property>
           <value>90</value>
         </greater-than>
     </condition>

@@ -18,7 +18,7 @@
       <name>engine-RH-connect</name>
       <path>Aircraft/F-15DJ_ADTW/Sounds/jfs-connect.wav</path>
       <condition>
-        <property>/controls/engines/engine[0]/starter</property>
+        <property>controls/engines/engine[0]/starter</property>
       </condition>
     </engine>
 
@@ -30,19 +30,19 @@
       <path>Aircraft/F-15DJ_ADTW/Sounds/turbojet_fan.wav</path>
       <condition>
        <and>
-        <property>/sim/current-view/internal</property>
+        <property>sim/current-view/internal</property>
         <greater-than>
-        <property>/instrumentation/doors/crew/position-norm</property>
+        <property>instrumentation/doors/crew/position-norm</property>
         <value> 0.1 </value>
         </greater-than>
        </and>
       </condition>
      <volume>
-      <property>/controls/engines/engine[0]/starter-position-norm</property>
+      <property>controls/engines/engine[0]/starter-position-norm</property>
        <factor>1</factor>
       </volume>
       <pitch>
-        <property>/controls/engines/engine[0]/starter-position-norm</property>
+        <property>controls/engines/engine[0]/starter-position-norm</property>
         <factor>1</factor>
       </pitch>
     </engine>
@@ -54,19 +54,19 @@
       <path>Aircraft/F-15DJ_ADTW/Sounds/turbojet_fan_sirent.wav</path>
       <condition>
        <and>
-        <property>/sim/current-view/internal</property>
+        <property>sim/current-view/internal</property>
         <less-than>
-        <property>/instrumentation/doors/crew/position-norm</property>
+        <property>instrumentation/doors/crew/position-norm</property>
         <value> 0.1 </value>
         </less-than>
        </and>
       </condition>
      <volume>
-      <property>/controls/engines/engine[0]/starter-position-norm</property>
+      <property>controls/engines/engine[0]/starter-position-norm</property>
        <factor>1</factor>
       </volume>
       <pitch>
-        <property>/controls/engines/engine[0]/starter-position-norm</property>
+        <property>controls/engines/engine[0]/starter-position-norm</property>
         <factor>1</factor>
       </pitch>
     </engine>
@@ -78,7 +78,7 @@
       <path>Aircraft/F-15DJ_ADTW/Sounds/jfs-cutoff.wav</path>
       <condition>
         <greater-than>
-        <property>/controls/engines/engine[0]/starter-position-norm</property>
+        <property>controls/engines/engine[0]/starter-position-norm</property>
         <value> 0.97 </value>
         </greater-than>
       </condition>
@@ -91,16 +91,16 @@
       <path>Aircraft/F-15DJ_ADTW/Sounds/turbojet_fan.wav</path>
       <condition>
        <equals>
-        <property>/sim/current-view/internal</property>
+        <property>sim/current-view/internal</property>
         <value> false </value>
        </equals>
       </condition>
      <volume>
-      <property>/controls/engines/engine[0]/starter-position-norm</property>
+      <property>controls/engines/engine[0]/starter-position-norm</property>
        <factor>1</factor>
       </volume>
       <pitch>
-        <property>/controls/engines/engine[0]/starter-position-norm</property>
+        <property>controls/engines/engine[0]/starter-position-norm</property>
         <factor>1</factor>
       </pitch>
     </engine>
@@ -114,20 +114,20 @@
       <or>
        <and>
         <not>
-          <property>/sim/current-view/internal</property>
+          <property>sim/current-view/internal</property>
         </not>
        </and>
        <and>
-        <property>/sim/current-view/internal</property>
+        <property>sim/current-view/internal</property>
         <greater-than>
-        <property>/instrumentation/doors/crew/position-norm</property>
+        <property>instrumentation/doors/crew/position-norm</property>
         <value> 0 </value>
         </greater-than>
        </and>
       </or>
       </condition>
       <volume>
-        <property>/engines/engine[0]/n2</property>h
+        <property>engines/engine[0]/n2</property>h
         <factor type="double">0.01</factor>
       </volume>
       <pitch>
@@ -146,24 +146,24 @@
       <or>
        <and>
         <not>
-          <property>/sim/current-view/internal</property>
+          <property>sim/current-view/internal</property>
         </not>
        </and>
        <and>
-        <property>/sim/current-view/internal</property>
+        <property>sim/current-view/internal</property>
         <greater-than>
-        <property>/instrumentation/doors/crew/position-norm</property>
+        <property>instrumentation/doors/crew/position-norm</property>
         <value> 0 </value>
         </greater-than>
        </and>
       </or>
       </condition>
       <volume>
-        <property>/engines/engine[0]/afterburner</property>h
+        <property>engines/engine[0]/afterburner</property>
         <factor type="double">1</factor>
       </volume>
       <pitch>
-        <property>/engines/engine[0]/afterburner</property>
+        <property>engines/engine[0]/afterburner</property>
         <factor>1</factor>
       </pitch>
       <reference-dist>100</reference-dist>
@@ -176,18 +176,18 @@
       <mode>looped</mode>
       <path>Aircraft/F-15DJ_ADTW/Sounds/exhaust_start.wav</path>
      <condition>
-        <property>/sim/current-view/internal</property>
+        <property>sim/current-view/internal</property>
         <equals>
-        <property>/instrumentation/doors/crew/position-norm</property>
+        <property>instrumentation/doors/crew/position-norm</property>
         <value> 0 </value>
         </equals>
       </condition>
       <volume>
-        <property>/engines/engine[0]/afterburner</property>h
+        <property>engines/engine[0]/afterburner</property>
         <factor type="double">0.1</factor>
       </volume>
       <pitch>
-        <property>/engines/engine[0]/afterburner</property>
+        <property>engines/engine[0]/afterburner</property>
         <factor>5</factor>
       </pitch>
       <reference-dist>100</reference-dist>
@@ -203,14 +203,14 @@
       <condition>
        <and>
         <not>
-          <property>/sim/current-view/internal</property>
+          <property>sim/current-view/internal</property>
         </not>
         <greater-than>
-        <property>/controls/engines/engine[0]/throttle</property>
+        <property>controls/engines/engine[0]/throttle</property>
         <value> 0.1 </value>
         </greater-than>
         <less-than>
-        <property>/controls/engines/engine[0]/throttle</property>
+        <property>controls/engines/engine[0]/throttle</property>
         <value> 0.4 </value>
         </less-than>
        </and>
@@ -229,7 +229,7 @@
       <name>engine-LH-connect</name>
       <path>Aircraft/F-15DJ_ADTW/Sounds/jfs-connect.wav</path>
      <condition>
-        <property>/controls/engines/engine[1]/starter</property>
+        <property>controls/engines/engine[1]/starter</property>
       </condition>
     </engine>
 
@@ -241,19 +241,19 @@
       <path>Aircraft/F-15DJ_ADTW/Sounds/turbojet_fan.wav</path>
       <condition>
        <and>
-        <property>/sim/current-view/internal</property>
+        <property>sim/current-view/internal</property>
         <greater-than>
-        <property>/instrumentation/doors/crew/position-norm</property>
+        <property>instrumentation/doors/crew/position-norm</property>
         <value> 0.1 </value>
         </greater-than>
        </and>
       </condition>
      <volume>
-      <property>/controls/engines/engine[1]/starter-position-norm</property>
+      <property>controls/engines/engine[1]/starter-position-norm</property>
        <factor>1</factor>
       </volume>
       <pitch>
-        <property>/controls/engines/engine[1]/starter-position-norm</property>
+        <property>controls/engines/engine[1]/starter-position-norm</property>
         <factor>1</factor>
       </pitch>
     </engine>
@@ -266,19 +266,19 @@
       <path>Aircraft/F-15DJ_ADTW/Sounds/turbojet_fan_sirent.wav</path>
       <condition>
        <and>
-        <property>/sim/current-view/internal</property>
+        <property>sim/current-view/internal</property>
         <less-than>
-        <property>/instrumentation/doors/crew/position-norm</property>
+        <property>instrumentation/doors/crew/position-norm</property>
         <value> 0.1 </value>
         </less-than>
        </and>
       </condition>
      <volume>
-      <property>/controls/engines/engine[1]/starter-position-norm</property>
+      <property>controls/engines/engine[1]/starter-position-norm</property>
        <factor>1</factor>
       </volume>
       <pitch>
-        <property>/controls/engines/engine[1]/starter-position-norm</property>
+        <property>controls/engines/engine[1]/starter-position-norm</property>
         <factor>1</factor>
       </pitch>
     </engine>
@@ -290,7 +290,7 @@
       <path>Aircraft/F-15DJ_ADTW/Sounds/jfs-cutoff.wav</path>
       <condition>
         <greater-than>
-        <property>/controls/engines/engine[1]/starter-position-norm</property>
+        <property>controls/engines/engine[1]/starter-position-norm</property>
         <value> 0.97 </value>
         </greater-than>
       </condition>
@@ -303,12 +303,12 @@
       <path>Aircraft/F-15DJ_ADTW/Sounds/turbojet_fan.wav</path>
       <condition>
        <equals>
-        <property>/sim/current-view/internal</property>
+        <property>sim/current-view/internal</property>
         <value> false </value>
        </equals>
       </condition>
      <volume>
-      <property>/controls/engines/engine[1]/starter-position-norm</property>
+      <property>controls/engines/engine[1]/starter-position-norm</property>
        <factor>1</factor>
       </volume>
       <pitch>
@@ -327,24 +327,24 @@
       <or>
        <and>
         <not>
-          <property>/sim/current-view/internal</property>
+          <property>sim/current-view/internal</property>
         </not>
        </and>
        <and>
-        <property>/sim/current-view/internal</property>
+        <property>sim/current-view/internal</property>
         <greater-than>
-        <property>/instrumentation/doors/crew/position-norm</property>
+        <property>instrumentation/doors/crew/position-norm</property>
         <value> 0 </value>
         </greater-than>
        </and>
       </or>
       </condition>
       <volume>
-        <property>/engines/engine[1]/n2</property>h
+        <property>engines/engine[1]/n2</property>
         <factor type="double">0.01</factor>
       </volume>
       <pitch>
-        <property>/engines/engine[1]/n2</property>
+        <property>engines/engine[1]/n2</property>
         <factor>1</factor>
       </pitch>
     </engine>
@@ -359,24 +359,24 @@
       <or>
        <and>
         <not>
-          <property>/sim/current-view/internal</property>
+          <property>sim/current-view/internal</property>
         </not>
        </and>
        <and>
-        <property>/sim/current-view/internal</property>
+        <property>sim/current-view/internal</property>
         <greater-than>
-        <property>/instrumentation/doors/crew/position-norm</property>
+        <property>instrumentation/doors/crew/position-norm</property>
         <value> 0 </value>
         </greater-than>
        </and>
       </or>
       </condition>
       <volume>
-        <property>/engines/engine[1]/afterburner</property>h
+        <property>engines/engine[1]/afterburner</property>
         <factor type="double">1</factor>
       </volume>
       <pitch>
-        <property>/engines/engine[1]/afterburner</property>
+        <property>engines/engine[1]/afterburner</property>
         <factor>1</factor>
       </pitch>
       <reference-dist>100</reference-dist>
@@ -390,18 +390,18 @@
       <mode>looped</mode>
       <path>Aircraft/F-15DJ_ADTW/Sounds/exhaust_start.wav</path>
      <condition>
-        <property>/sim/current-view/internal</property>
+        <property>sim/current-view/internal</property>
         <equals>
-        <property>/instrumentation/doors/crew/position-norm</property>
+        <property>instrumentation/doors/crew/position-norm</property>
         <value> 0 </value>
         </equals>
       </condition>
       <volume>
-        <property>/engines/engine[1]/afterburner</property>h
+        <property>engines/engine[1]/afterburner</property>
         <factor type="double">0.1</factor>
       </volume>
       <pitch>
-        <property>/engines/engine[1]/afterburner</property>
+        <property>engines/engine[1]/afterburner</property>
         <factor>5</factor>
       </pitch>
       <reference-dist>100</reference-dist>
@@ -416,14 +416,14 @@
       <condition>
        <and>
         <not>
-          <property>/sim/current-view/internal</property>
+          <property>sim/current-view/internal</property>
         </not>
         <greater-than>
-        <property>/controls/engines/engine[1]/throttle</property>
+        <property>controls/engines/engine[1]/throttle</property>
         <value> 0.1 </value>
         </greater-than>
         <less-than>
-        <property>/controls/engines/engine[1]/throttle</property>
+        <property>controls/engines/engine[1]/throttle</property>
         <value> 0.4 </value>
         </less-than>
        </and>
@@ -443,11 +443,11 @@
       <path>Aircraft/F-15DJ_ADTW/Sounds/rumble.wav</path>
       <condition>
         <or>
-          <property>/gear/gear[0]/wow</property>
-          <property>/gear/gear[1]/wow</property>
-          <property>/gear/gear[2]/wow</property>
+          <property>gear/gear[0]/wow</property>
+          <property>gear/gear[1]/wow</property>
+          <property>gear/gear[2]/wow</property>
         </or>
-        <!-- <property>/sim/current-view/internal</property> -->
+        <!-- <property>sim/current-view/internal</property> -->
       </condition>
       <volume>
         <property>/velocities/groundspeed-kt</property>
@@ -458,7 +458,7 @@
         <min>0.01</min>
       </volume>
       <pitch>
-        <property>/velocities/groundspeed-kt</property>
+        <property>velocities/groundspeed-kt</property>
         <factor>0.01</factor>
         <offset>0.85</offset>
       </pitch>
@@ -473,18 +473,18 @@
       <path>Aircraft/F-15DJ_ADTW/Sounds/wow.wav</path>
       <condition>
         <or>
-          <property>/gear/gear[0]/wow</property>
-          <property>/gear/gear[1]/wow</property>
-          <property>/gear/gear[2]/wow</property>
+          <property>gear/gear[0]/wow</property>
+          <property>gear/gear[1]/wow</property>
+          <property>gear/gear[2]/wow</property>
         </or>
       </condition>
       <volume>
-        <property>/velocities/speed-down-fps</property>
+        <property>velocities/speed-down-fps</property>
         <factor>0.5</factor>
         <max>1.0</max>
       </volume>
       <volume>
-        <property>/velocities/airspeed-kt</property>
+        <property>velocities/airspeed-kt</property>
         <factor>0.1</factor>
         <max>1.0</max>
       </volume>
@@ -494,7 +494,7 @@
         <max>1.0</max>
       </volume>
       <pitch>
-        <property>/velocities/airspeed-kt</property>
+        <property>velocities/airspeed-kt</property>
         <factor>0.0025</factor>
         <offset>1.0</offset>
       </pitch>
@@ -506,7 +506,7 @@
       <name>gear0</name>
       <mode>in-transit</mode>
       <path>Aircraft/F-15DJ_ADTW/Sounds/gear.wav</path>
-      <property>/gear/gear[0]/position-norm</property>
+      <property>gear/gear[0]/position-norm</property>
       <volume> 
         <factor>1.0</factor>
       </volume>
@@ -523,7 +523,7 @@
       <name>gear2</name>
       <mode>in-transit</mode>
       <path>Aircraft/F-15DJ_ADTW/Sounds/gear.wav</path>
-      <property>/gear/gear[2]/position-norm</property>
+      <property>gear/gear[2]/position-norm</property>
       <volume> 
         <factor>1.0</factor>
       </volume>
@@ -541,7 +541,7 @@
       <path>Aircraft/F-15DJ_ADTW/Sounds/gear_hatch.wav</path>
       <condition>
         <equals>
-          <property>/gear/gear[0]/position-norm</property>
+          <property>gear/gear[0]/position-norm</property>
           <value>0</value>
         </equals>
       </condition>
@@ -558,11 +558,11 @@
       <condition>
         <or>
         <equals>
-          <property>/gear/gear[2]/position-norm</property>
+          <property>gear/gear[2]/position-norm</property>
           <value>0</value>
         </equals>
         <equals>
-          <property>/gear/gear[2]/position-norm</property>
+          <property>gear/gear[2]/position-norm</property>
           <value>1</value>
         </equals>
         </or>
@@ -578,7 +578,7 @@
       <name>flaps</name>
       <mode>in-transit</mode>
       <path>Aircraft/F-15DJ_ADTW/Sounds/gear.wav</path>
-      <property>/surface-positions/flap-pos-norm</property>
+      <property>surface-positions/flap-pos-norm</property>
       <volume> 
         <factor>1.0</factor>
       </volume>
@@ -590,7 +590,7 @@
       <name>speedbrake</name>
       <mode>in-transit</mode>
       <path>Aircraft/F-15DJ_ADTW/Sounds/gear.wav</path>
-      <property>/surface-positions/speedbrake-pos-norm</property>
+      <property>surface-positions/speedbrake-pos-norm</property>
       <volume> 
         <factor>1.0</factor>
       </volume>
@@ -602,7 +602,7 @@
       <name>wind</name>
       <mode>looped</mode>
       <path>Sounds/wind.wav</path>
-      <property>/velocities/airspeed-kt</property>
+      <property>velocities/airspeed-kt</property>
       <volume>
         <property>/position/altitude-ft</property>
         <factor>-0.000015</factor>
@@ -611,13 +611,13 @@
         <max>1.0</max>
       </volume>
       <volume>
-        <property>/velocities/airspeed-kt</property>
+        <property>velocities/airspeed-kt</property>
         <factor>0.0015</factor>
         <min>0.0</min>
         <max>0.4</max>
       </volume>
       <pitch>
-        <property>/velocities/airspeed-kt</property>
+        <property>velocities/airspeed-kt</property>
         <factor>0.0035</factor>
         <offset>1.25</offset>
       </pitch>
@@ -793,11 +793,11 @@
    <condition>
     <and>
      <greater-than>
-       <property>/orientation/alpha-deg</property>
+       <property>orientation/alpha-deg</property>
        <value>22</value>
      </greater-than>
      <less-than>
-       <property>/orientation/alpha-deg</property>
+       <property>orientation/alpha-deg</property>
        <value>25</value>
      </less-than>
     <not>
@@ -823,7 +823,7 @@
    <condition>
     <and>
      <greater-than>
-       <property>/orientation/alpha-deg</property>
+       <property>orientation/alpha-deg</property>
        <value>25</value>
      </greater-than>
     <not>
@@ -850,7 +850,7 @@
    <condition>
     <and>
        <less-than>
-         <property>/position/gear-agl-ft</property>
+         <property>position/gear-agl-ft</property>
          <property>instrumentation/altimeter/setting-low-alert</property>
        </less-than>
 
@@ -862,12 +862,12 @@
 
        <or>
         <equals>
-          <property>/gear/gear[0]/position-norm</property>
+          <property>gear/gear[0]/position-norm</property>
           <value>0</value>
         </equals>
 
         <equals>
-          <property>/surface-positions/flap-pos-norm</property>
+          <property>surface-positions/flap-pos-norm</property>
           <value>0</value>
         </equals>
        </or>
@@ -890,12 +890,12 @@
    <condition>
     <and>
        <less-than>
-         <property>/position/gear-agl-ft</property>
+         <property>position/gear-agl-ft</property>
          <value>1300</value>
        </less-than>
 
        <less-than>
-         <property>/velocities/vertical-speed-fps</property>
+         <property>velocities/vertical-speed-fps</property>
          <value>-60</value>
        </less-than>
    </and>
@@ -917,11 +917,11 @@
    <condition>
     <and>
        <less-than>
-         <property>/consumables/fuel/total-internal-fuel-lbs</property>
-         <property>/consumables/fuel/bingo-lbs</property>
+         <property>consumables/fuel/total-internal-fuel-lbs</property>
+         <property>consumables/fuel/bingo-lbs</property>
        </less-than>
        <greater-than>
-         <property>/consumables/fuel/total-internal-fuel-lbs</property>
+         <property>consumables/fuel/total-internal-fuel-lbs</property>
          <value>3000</value>
        </greater-than>
    </and>
@@ -960,9 +960,9 @@
    <path>Aircraft/F-15DJ_ADTW/Sounds/warning_amad_fire.wav</path>
         <condition>
          <and>
-         <property>/controls/switches/fire-warning-test</property>
+         <property>controls/switches/fire-warning-test</property>
          <equals>
-             <property>/controls/APU/ready</property>
+             <property>controls/APU/ready</property>
              <value>1</value>
           </equals>
          </and>
@@ -977,7 +977,7 @@
    <path>Aircraft/F-15DJ_ADTW/Sounds/low-fuel.wav</path>
    <condition>
        <less-than>
-         <property>/consumables/fuel/total-internal-fuel-lbs</property>
+         <property>consumables/fuel/total-internal-fuel-lbs</property>
          <value>3000</value>
        </less-than>>
    </condition>
@@ -996,11 +996,11 @@
    <condition>
       <and>
        <less-than>
-         <property>/instrumentation/doors/crew/position-norm</property>
+         <property>instrumentation/doors/crew/position-norm</property>
          <value>0.95</value>
        </less-than>
        <greater-than>
-         <property>/instrumentation/doors/crew/position-norm</property>
+         <property>instrumentation/doors/crew/position-norm</property>
          <value>0.1</value>
        </greater-than>
       </and>
@@ -1017,7 +1017,7 @@
       <name>TAILHOOK</name>
       <mode>in-transit</mode>
       <path>Aircraft/F-15DJ_ADTW/Sounds/gear.wav</path>
-      <property>/gear/tailhook/position-norm</property>
+      <property>gear/tailhook/position-norm</property>
       <volume> 
         <factor>1.0</factor>
       </volume>

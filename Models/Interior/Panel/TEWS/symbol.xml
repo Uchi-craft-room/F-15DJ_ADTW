@@ -22,7 +22,7 @@
             <property>instrumentation/tacan/in-range</property>
           <less-than-equals>
             <property>instrumentation/tacan/indicated-distance-nm</property>
-            <property>/instrumentation/radar/range</property>
+            <property>instrumentation/radar/range</property>
           </less-than-equals>
          <greater-than>
             <property>instrumentation/tacan/indicated-time-min</property>

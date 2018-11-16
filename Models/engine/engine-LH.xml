@@ -15,7 +15,7 @@
     <type>spin</type>
     <object-name>fun</object-name>
     <object-name>augmentor</object-name>
-    <property>/controls/engines/engine[1]/starter-position-norm</property>
+    <property>controls/engines/engine[1]/starter-position-norm</property>
     <factor> 800 </factor>
     <center>
       <x-m> 0 </x-m>
@@ -32,7 +32,7 @@
   <animation>
     <type>translate</type>
     <object-name>afterburner</object-name>
-     <property>/engines/engine[1]/afterburner</property>
+     <property>engines/engine[1]/afterburner</property>
   <interpolation>
    <entry><ind>0</ind><dep>-1</dep></entry>
    <entry><ind>1.0</ind><dep>0</dep></entry>
@@ -67,10 +67,10 @@
     <condition>
      <and>
      <not>
-     <property>/engines/engine[1]/out-of-fuel</property>
+     <property>engines/engine[1]/out-of-fuel</property>
      </not>
      <greater-than>
-     <property>/engines/engine[1]/afterburner</property>
+     <property>engines/engine[1]/afterburner</property>
      <value> 0.1 </value>
      </greater-than>
      </and>
@@ -81,7 +81,7 @@
     <animation>
         <type>scale</type>
         <object-name>augmentor</object-name>
-        <property>/engines/engine[1]/afterburner</property>
+        <property>engines/engine[1]/afterburner</property>
         <interpolation>
             <entry><ind>0.00</ind> <dep>0.5</dep></entry>
             <entry><ind>1.00</ind><dep>1.0</dep></entry>

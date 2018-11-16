@@ -59,6 +59,11 @@
    <object-name>T3</object-name>
    <object-name>T4</object-name>
    <object-name>T5</object-name>
+   <object-name>T6</object-name>
+   <object-name>T7</object-name>
+   <object-name>T8</object-name>
+   <object-name>T9</object-name>
+   <object-name>T10</object-name>
    <object-name>gs</object-name>
    <object-name>gs3</object-name>
    <object-name>gs2</object-name>
@@ -802,6 +807,337 @@
          </and>
         </condition>
     </animation>
+
+<!-- SYMBOL T6 -->
+
+   <animation>
+     <type>select</type>
+   <object-name>T6</object-name>
+        <condition>
+         <and>
+         <property>ai/models/multiplayer[0]/radar/in-range</property>
+         <or>
+            <property>controls/electric/engine/generator</property>
+            <property>controls/electric/engine[1]/generator</property>
+         </or>
+         <greater-than>
+            <property>systems/electrical/volts</property>
+            <value>24</value>
+         </greater-than>
+         <greater-than>
+            <property>ai/models/multiplayer[0]/radar/h-offset</property>
+            <value>-60</value>
+         </greater-than>
+         <less-than>
+            <property>ai/models/multiplayer[0]/radar/h-offset</property>
+            <value>60</value>
+         </less-than>
+         <less-than>
+            <property>ai/models/multiplayer[0]/radar/range-nm</property>
+            <property>instrumentation/radar/range</property>
+         </less-than>
+         </and>
+        </condition>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+     <object-name>T6</object-name>
+     <property>ai/models/multiplayer[0]/radar/range-nm-shift</property>
+        <axis>
+            <x> 0.0 </x>
+            <y> 0.0 </y>
+            <z> 1.0 </z>
+        </axis>
+        <center>
+            <x-m>0.0</x-m>
+            <y-m>0.0</y-m>
+            <z-m>0.0</z-m>
+        </center>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+     <object-name>T6</object-name>
+     <property>ai/models/multiplayer[0]/radar/h-offset</property>
+      <factor> 0.0009 </factor>
+        <axis>
+            <x>0.0</x>
+            <y>1.0</y>
+            <z>0.0</z>
+        </axis>
+        <center>
+            <x-m>0.0</x-m>
+            <y-m>0.0</y-m>
+            <z-m>0.0</z-m>
+        </center>
+  </animation>
+
+<!-- SYMBOL T7 -->
+
+   <animation>
+     <type>select</type>
+   <object-name>T7</object-name>
+        <condition>
+         <and>
+         <property>ai/models/multiplayer[1]/radar/in-range</property>
+         <or>
+            <property>controls/electric/engine/generator</property>
+            <property>controls/electric/engine[1]/generator</property>
+         </or>
+         <greater-than>
+            <property>systems/electrical/volts</property>
+            <value>24</value>
+         </greater-than>
+         <greater-than>
+            <property>ai/models/multiplayer[1]/radar/h-offset</property>
+            <value>-60</value>
+         </greater-than>
+         <less-than>
+            <property>ai/models/multiplayer[1]/radar/h-offset</property>
+            <value>60</value>
+         </less-than>
+         <less-than>
+            <property>ai/models/multiplayer[1]/radar/range-nm</property>
+            <property>instrumentation/radar/range</property>
+         </less-than>
+         </and>
+        </condition>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+     <object-name>T7</object-name>
+     <property>ai/models/multiplayer[1]/radar/range-nm-shift</property>
+        <axis>
+            <x> 0.0 </x>
+            <y> 0.0 </y>
+            <z> 1.0 </z>
+        </axis>
+        <center>
+            <x-m>0.0</x-m>
+            <y-m>0.0</y-m>
+            <z-m>0.0</z-m>
+        </center>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+     <object-name>T7</object-name>
+     <property>ai/models/multiplayer[1]/radar/h-offset</property>
+      <factor> 0.0009 </factor>
+        <axis>
+            <x>0.0</x>
+            <y>1.0</y>
+            <z>0.0</z>
+        </axis>
+        <center>
+            <x-m>0.0</x-m>
+            <y-m>0.0</y-m>
+            <z-m>0.0</z-m>
+        </center>
+  </animation>
+
+
+<!-- SYMBOL T8 -->
+
+   <animation>
+     <type>select</type>
+   <object-name>T8</object-name>
+        <condition>
+         <and>
+         <property>ai/models/multiplayer[2]/radar/in-range</property>
+         <or>
+            <property>controls/electric/engine/generator</property>
+            <property>controls/electric/engine[2]/generator</property>
+         </or>
+         <greater-than>
+            <property>systems/electrical/volts</property>
+            <value>24</value>
+         </greater-than>
+         <greater-than>
+            <property>ai/models/multiplayer[2]/radar/h-offset</property>
+            <value>-60</value>
+         </greater-than>
+         <less-than>
+            <property>ai/models/multiplayer[2]/radar/h-offset</property>
+            <value>60</value>
+         </less-than>
+         <less-than>
+            <property>ai/models/multiplayer[2]/radar/range-nm</property>
+            <property>instrumentation/radar/range</property>
+         </less-than>
+         </and>
+        </condition>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+     <object-name>T8</object-name>
+     <property>ai/models/multiplayer[2]/radar/range-nm-shift</property>
+        <axis>
+            <x> 0.0 </x>
+            <y> 0.0 </y>
+            <z> 1.0 </z>
+        </axis>
+        <center>
+            <x-m>0.0</x-m>
+            <y-m>0.0</y-m>
+            <z-m>0.0</z-m>
+        </center>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+     <object-name>T8</object-name>
+     <property>ai/models/multiplayer[2]/radar/h-offset</property>
+      <factor> 0.0009 </factor>
+        <axis>
+            <x>0.0</x>
+            <y>1.0</y>
+            <z>0.0</z>
+        </axis>
+        <center>
+            <x-m>0.0</x-m>
+            <y-m>0.0</y-m>
+            <z-m>0.0</z-m>
+        </center>
+  </animation>
+
+
+<!-- SYMBOL T9 -->
+
+   <animation>
+     <type>select</type>
+   <object-name>T9</object-name>
+        <condition>
+         <and>
+         <property>ai/models/multiplayer[3]/radar/in-range</property>
+         <or>
+            <property>controls/electric/engine/generator</property>
+            <property>controls/electric/engine[3]/generator</property>
+         </or>
+         <greater-than>
+            <property>systems/electrical/volts</property>
+            <value>24</value>
+         </greater-than>
+         <greater-than>
+            <property>ai/models/multiplayer[3]/radar/h-offset</property>
+            <value>-60</value>
+         </greater-than>
+         <less-than>
+            <property>ai/models/multiplayer[3]/radar/h-offset</property>
+            <value>60</value>
+         </less-than>
+         <less-than>
+            <property>ai/models/multiplayer[3]/radar/range-nm</property>
+            <property>instrumentation/radar/range</property>
+         </less-than>
+         </and>
+        </condition>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+     <object-name>T9</object-name>
+     <property>ai/models/multiplayer[3]/radar/range-nm-shift</property>
+        <axis>
+            <x> 0.0 </x>
+            <y> 0.0 </y>
+            <z> 1.0 </z>
+        </axis>
+        <center>
+            <x-m>0.0</x-m>
+            <y-m>0.0</y-m>
+            <z-m>0.0</z-m>
+        </center>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+     <object-name>T9</object-name>
+     <property>ai/models/multiplayer[3]/radar/h-offset</property>
+      <factor> 0.0009 </factor>
+        <axis>
+            <x>0.0</x>
+            <y>1.0</y>
+            <z>0.0</z>
+        </axis>
+        <center>
+            <x-m>0.0</x-m>
+            <y-m>0.0</y-m>
+            <z-m>0.0</z-m>
+        </center>
+  </animation>
+
+
+<!-- SYMBOL T10 -->
+
+   <animation>
+     <type>select</type>
+   <object-name>T10</object-name>
+        <condition>
+         <and>
+         <property>ai/models/multiplayer[4]/radar/in-range</property>
+         <or>
+            <property>controls/electric/engine/generator</property>
+            <property>controls/electric/engine[4]/generator</property>
+         </or>
+         <greater-than>
+            <property>systems/electrical/volts</property>
+            <value>24</value>
+         </greater-than>
+         <greater-than>
+            <property>ai/models/multiplayer[4]/radar/h-offset</property>
+            <value>-60</value>
+         </greater-than>
+         <less-than>
+            <property>ai/models/multiplayer[4]/radar/h-offset</property>
+            <value>60</value>
+         </less-than>
+         <less-than>
+            <property>ai/models/multiplayer[4]/radar/range-nm</property>
+            <property>instrumentation/radar/range</property>
+         </less-than>
+         </and>
+        </condition>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+     <object-name>T10</object-name>
+     <property>ai/models/multiplayer[4]/radar/range-nm-shift</property>
+        <axis>
+            <x> 0.0 </x>
+            <y> 0.0 </y>
+            <z> 1.0 </z>
+        </axis>
+        <center>
+            <x-m>0.0</x-m>
+            <y-m>0.0</y-m>
+            <z-m>0.0</z-m>
+        </center>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+     <object-name>T10</object-name>
+     <property>ai/models/multiplayer[4]/radar/h-offset</property>
+      <factor> 0.0009 </factor>
+        <axis>
+            <x>0.0</x>
+            <y>1.0</y>
+            <z>0.0</z>
+        </axis>
+        <center>
+            <x-m>0.0</x-m>
+            <y-m>0.0</y-m>
+            <z-m>0.0</z-m>
+        </center>
+  </animation>
+
+
+
 
 
 <!-- lighting -->

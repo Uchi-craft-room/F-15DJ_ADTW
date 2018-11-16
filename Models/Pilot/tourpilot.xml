@@ -53,7 +53,7 @@
   <animation>
     <type>rotate</type>
     <object-name>AnimeTete</object-name>
-    <property>/instrumentation/turn-indicator/indicated-turn-rate</property>
+    <property>instrumentation/turn-indicator/indicated-turn-rate</property>
     <factor>50</factor>
     <min-deg>-50</min-deg>
     <max-deg>50</max-deg>

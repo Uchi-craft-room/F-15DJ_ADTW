@@ -8,7 +8,7 @@
     <type>rotate</type>
     <object-name>nozzle-A1</object-name>
     <object-name>nozzle-B1</object-name>
-    <property>/controls/engines/engine[1]/throttle</property>
+    <property>controls/engines/engine[1]/throttle</property>
     <interpolation>
       <entry><ind>  0.0 </ind><dep>  5.0 </dep></entry>
       <entry><ind>  0.6 </ind><dep> 30.0 </dep></entry>
@@ -29,7 +29,7 @@
     <type>rotate</type>
     <object-name>nozzle-A1</object-name>
     <object-name>nozzle-B1</object-name>
-    <property>/engines/engine[1]/afterburner</property>
+    <property>engines/engine[1]/afterburner</property>
     <interpolation>
       <entry><ind>  0.0 </ind><dep>  0.0 </dep></entry>
       <entry><ind>  1.0 </ind><dep> -30.0 </dep></entry>
@@ -49,7 +49,7 @@
   <animation>
     <type>rotate</type>
     <object-name>nozzle-B1</object-name>
-    <property>/controls/engines/engine[1]/throttle</property>
+    <property>controls/engines/engine[1]/throttle</property>
     <interpolation>
       <entry><ind>  0.0 </ind><dep>  2.0 </dep></entry>
       <entry><ind>  0.6 </ind><dep> 25.0 </dep></entry>
@@ -69,7 +69,7 @@
   <animation>
     <type>rotate</type>
     <object-name>nozzle-B1</object-name>
-    <property>/engines/engine[1]/afterburner</property>
+    <property>engines/engine[1]/afterburner</property>
     <interpolation>
       <entry><ind>  0.0 </ind><dep>  0.0 </dep></entry>
       <entry><ind>  1.0 </ind><dep> -25.0 </dep></entry>

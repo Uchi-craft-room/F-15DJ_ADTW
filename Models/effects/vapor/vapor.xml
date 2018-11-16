@@ -11,7 +11,7 @@
     <condition>
       <and>
         <greater-than>
-          <property>/orientation/alpha-deg</property>
+          <property>orientation/alpha-deg</property>
           <value>20</value>
         </greater-than>
         <greater-than>

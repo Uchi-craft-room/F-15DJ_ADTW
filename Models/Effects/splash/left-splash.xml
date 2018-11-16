@@ -16,9 +16,9 @@
 
         <condition>
             <and>
-                <property>/gear/gear[0]/wow</property>
+                <property>gear/gear[0]/wow</property>
                 <greater-than>
-                <property>/environment/surface/wetness</property>
+                <property>environment/surface/wetness</property>
                  <value>0.05</value>
                 </greater-than>
                 <greater-than>
@@ -104,12 +104,12 @@
                 </size>
             </end>
             <life-sec>
-                <property>/environment/surface/wetness</property>
+                <property>environment/surface/wetness</property>
                 <factor>0.3</factor>
             </life-sec>
             <mass-kg>0.15</mass-kg>
             <radius-m>
-                <property>/environment/surface/wetness</property>
+                <property>environment/surface/wetness</property>
                  <factor>2</factor>
             </radius-m>
         </particle>

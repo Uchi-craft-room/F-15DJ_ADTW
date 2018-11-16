@@ -56,7 +56,7 @@
   <animation>
     <type>rotate</type>
     <object-name>AnimeTete</object-name>
-    <property>/instrumentation/slip-skid-ball/indicated-slip-skid</property>
+    <property>instrumentation/slip-skid-ball/indicated-slip-skid</property>
     <factor>50</factor>
     <min-deg>-50</min-deg>
     <max-deg>50</max-deg>

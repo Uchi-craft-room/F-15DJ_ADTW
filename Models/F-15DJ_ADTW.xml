@@ -9,7 +9,7 @@
         <type>select</type>
         <condition>
             <not>
-                <property>/sim/rendering/rembrandt/enabled</property>
+                <property>sim/rendering/rembrandt/enabled</property>
             </not>
         </condition>
         <object-name>CanopyGlassInside</object-name>
@@ -34,6 +34,14 @@
     <object-name>mirror</object-name>
     <object-name>landinglight-lenz</object-name>
     <object-name>taxinglight-lenz</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>glass_shader_inn.png</texture>
+    <object-name>canopy-glass-FR.001</object-name>
+    <object-name>canopy-glass-RR.001</object-name>
   </animation>
 
 
@@ -250,7 +258,7 @@
     <type>select</type>
     <object-name>EXTTANK-CTR</object-name>
     <condition>
-          <property>/consumables/fuel/ext-tank-ctr-selected</property>
+          <property>consumables/fuel/ext-tank-ctr-selected</property>
     </condition>
   </animation> 
 
@@ -259,7 +267,7 @@
     <object-name>EXTTANK-LH</object-name>
     <object-name>EXTTANK-RH</object-name>
     <condition>
-       <property>/consumables/fuel/ext-tank-wing-selected</property>
+       <property>consumables/fuel/ext-tank-wing-selected</property>
     </condition>
   </animation> 
 
@@ -277,13 +285,14 @@
     <condition>
       <and>
       <equals>
-        <property>/sim/rendering/rembrandt/enabled</property>
+        <property>sim/rendering/rembrandt/enabled</property>
         <value>false</value>
       </equals>
       <equals>
-        <property>/sim/replay/replay-state</property>
+        <property>sim/replay/replay-state</property>
         <value>0</value>
       </equals>
+      <property>gear/gear/ground-is-solid</property>
       </and>
     </condition>
   </animation>
@@ -378,7 +387,7 @@
   <animation>
     <type>rotate</type>
     <object-name>intake-RH</object-name>
-    <property>/controls/engines/engine/starter-position-norm</property>
+    <property>controls/engines/engine/starter-position-norm</property>
     <interpolation>
       <entry><ind>  0.0 </ind><dep>  0.0 </dep></entry>
       <entry><ind>  0.98 </ind><dep> 0.0 </dep></entry>
@@ -400,7 +409,7 @@
   <animation>
     <type>rotate</type>
     <object-name>intake-LH</object-name>
-    <property>/controls/engines/engine[1]/starter-position-norm</property>
+    <property>controls/engines/engine[1]/starter-position-norm</property>
     <interpolation>
       <entry><ind>  0.0 </ind><dep>  0.0 </dep></entry>
       <entry><ind>  0.98 </ind><dep> 0.0 </dep></entry>
@@ -443,7 +452,7 @@
     <type>rotate</type>
     <object-name>intake-RH</object-name>
     <object-name>intake-LH</object-name>
-    <property>/orientation/alpha-deg</property>
+    <property>orientation/alpha-deg</property>
     <interpolation>
    <entry><ind>0</ind><dep>0</dep></entry>
    <entry><ind>10</ind><dep>11</dep></entry>
@@ -703,7 +712,7 @@
   <object-name>hook</object-name>
   <object-name>hook_link1</object-name>
   <object-name>hook_link2</object-name>
-  <property>/gear/gear[2]/hook</property>
+  <property>gear/gear[2]/hook</property>
   <factor>60</factor>
   <center>
    <x-m>4.464</x-m>
@@ -721,7 +730,7 @@
   <type>rotate</type>
   <object-name>hook_link1</object-name>
   <object-name>hook_link2</object-name>
-  <property>/gear/gear[2]/hook</property>
+  <property>gear/gear[2]/hook</property>
   <factor>45</factor>
   <center>
    <x-m>4.808</x-m>
@@ -738,7 +747,7 @@
  <animation>
   <type>rotate</type>
   <object-name>hook_link1</object-name>
-  <property>/gear/gear[2]/hook</property>
+  <property>gear/gear[2]/hook</property>
   <factor>150</factor>
   <center>
    <x-m>4.701</x-m>
@@ -1393,6 +1402,7 @@
   <animation>
     <name>CanopyTotale</name>
     <object-name>canopy-glass-RR</object-name>
+    <object-name>canopy-glass-RR.001</object-name>
     <object-name>canopy-frame-RR</object-name>
     <object-name>CANOPYFUNCTION</object-name>
         <object-name>CanopyGlassInside</object-name>
@@ -1770,7 +1780,7 @@
   <animation>
     <type>rotate</type>
     <object-name>refuel-hatch1</object-name>
-    <property>/consumables/fuel/refuel-hatch-pos</property>
+    <property>consumables/fuel/refuel-hatch-pos</property>
     <interpolation>
       <entry><ind> 0 </ind><dep> 0.0 </dep></entry>
       <entry><ind> 1 </ind><dep> -45 </dep></entry>
@@ -1788,7 +1798,7 @@
   <animation>
     <type>translate</type>
     <object-name>refuel-hatch2</object-name>
-    <property>/consumables/fuel/refuel-hatch-pos</property>
+    <property>consumables/fuel/refuel-hatch-pos</property>
     <interpolation>
       <entry><ind> 0</ind><dep> 0.0 </dep></entry>
       <entry><ind> 0.5 </ind><dep> 0.3 </dep></entry>
@@ -1821,7 +1831,7 @@
     <type>select</type>
     <object-name>REFUEL-LT</object-name>
     <condition>
-      <property>/consumables/fuel/refuel-hatch-pos</property>
+      <property>consumables/fuel/refuel-hatch-pos</property>
     </condition>
   </animation>
 
@@ -1830,7 +1840,7 @@
     <type>select</type>
     <object-name>refuel-lamp-on</object-name>
     <condition>
-          <property>/consumables/fuel/refuel-hatch-pos</property>
+          <property>consumables/fuel/refuel-hatch-pos</property>
     </condition>
   </animation> 
 

@@ -26,16 +26,16 @@ registerTimer = func {
 # ================================== TACAN  ===================================
 
 
-range_control_node = props.globals.getNode("/instrumentation/radar/range-control", 1);
-range_node = props.globals.getNode("/instrumentation/radar/range", 1);
-wx_range_node = props.globals.getNode("/instrumentation/wxradar/range", 1);
+range_control_node = props.globals.getNode("instrumentation/radar/range-control", 1);
+range_node = props.globals.getNode("instrumentation/radar/range", 1);
+wx_range_node = props.globals.getNode("instrumentation/wxradar/range", 1);
 x_shift_node=  props.globals.getNode("instrumentation/tacan/display/x-shift", 1 );
 x_shift_scaled_node=  props.globals.getNode("instrumentation/tacan/display/x-shift-scaled",1);
 y_shift_node=  props.globals.getNode("instrumentation/tacan/display/y-shift", 1 );
 y_shift_scaled_node=  props.globals.getNode("instrumentation/tacan/display/y-shift-scaled",1);
-display_control_node = props.globals.getNode("/instrumentation/display-unit/control", 1);
-radar_control_node = props.globals.getNode("/instrumentation/radar/mode-control", 1);
-radar_range_node = props.globals.getNode("/instrumentation/radar/radar-range", 1);
+display_control_node = props.globals.getNode("instrumentation/display-unit/control", 1);
+radar_control_node = props.globals.getNode("instrumentation/radar/mode-control", 1);
+radar_range_node = props.globals.getNode("instrumentation/radar/radar-range", 1);
 range_tanker0_node = props.globals.getNode("ai/models/tanker[0]/radar/range-nm", 1);
 range_tanker1_node = props.globals.getNode("ai/models/tanker[1]/radar/range-nm", 1);
 range_tanker2_node = props.globals.getNode("ai/models/tanker[2]/radar/range-nm", 1);
@@ -46,7 +46,16 @@ range_tanker1_shift_node = props.globals.getNode("ai/models/tanker[1]/radar/rang
 range_tanker2_shift_node = props.globals.getNode("ai/models/tanker[2]/radar/range-nm-shift", 1);
 range_tanker3_shift_node = props.globals.getNode("ai/models/tanker[3]/radar/range-nm-shift", 1);
 range_tanker4_shift_node = props.globals.getNode("ai/models/tanker[4]/radar/range-nm-shift", 1);
-
+range_multiplayer0_node = props.globals.getNode("ai/models/multiplayer[0]/radar/range-nm", 1);
+range_multiplayer1_node = props.globals.getNode("ai/models/multiplayer[1]/radar/range-nm", 1);
+range_multiplayer2_node = props.globals.getNode("ai/models/multiplayer[2]/radar/range-nm", 1);
+range_multiplayer3_node = props.globals.getNode("ai/models/multiplayer[3]/radar/range-nm", 1);
+range_multiplayer4_node = props.globals.getNode("ai/models/multiplayer[4]/radar/range-nm", 1);
+range_multiplayer0_shift_node = props.globals.getNode("ai/models/multiplayer[0]/radar/range-nm-shift", 1);
+range_multiplayer1_shift_node = props.globals.getNode("ai/models/multiplayer[1]/radar/range-nm-shift", 1);
+range_multiplayer2_shift_node = props.globals.getNode("ai/models/multiplayer[2]/radar/range-nm-shift", 1);
+range_multiplayer3_shift_node = props.globals.getNode("ai/models/multiplayer[3]/radar/range-nm-shift", 1);
+range_multiplayer4_shift_node = props.globals.getNode("ai/models/multiplayer[4]/radar/range-nm-shift", 1);
 
 range_control_node.setIntValue(3); 
 range_node.setIntValue(40); 
@@ -68,6 +77,16 @@ range_tanker1_shift_node.setDoubleValue(0);
 range_tanker2_shift_node.setDoubleValue(0);
 range_tanker3_shift_node.setDoubleValue(0);
 range_tanker4_shift_node.setDoubleValue(0);
+range_multiplayer0_node.setDoubleValue(0);
+range_multiplayer1_node.setDoubleValue(0);
+range_multiplayer2_node.setDoubleValue(0);
+range_multiplayer3_node.setDoubleValue(0);
+range_multiplayer4_node.setDoubleValue(0);
+range_multiplayer0_shift_node.setDoubleValue(0);
+range_multiplayer1_shift_node.setDoubleValue(0);
+range_multiplayer2_shift_node.setDoubleValue(0);
+range_multiplayer3_shift_node.setDoubleValue(0);
+range_multiplayer4_shift_node.setDoubleValue(0);
 
 var scale = 2.55;	
 
@@ -105,7 +124,11 @@ scaleShift = func {
         range_tanker2_shift_node.setDoubleValue( radar_range_node.getValue() * range_tanker2_node.getValue() );
         range_tanker3_shift_node.setDoubleValue( radar_range_node.getValue() * range_tanker3_node.getValue() );
         range_tanker4_shift_node.setDoubleValue( radar_range_node.getValue() * range_tanker4_node.getValue() );
-
+        range_multiplayer0_shift_node.setDoubleValue( radar_range_node.getValue() * range_multiplayer0_node.getValue() );
+        range_multiplayer1_shift_node.setDoubleValue( radar_range_node.getValue() * range_multiplayer1_node.getValue() );
+        range_multiplayer2_shift_node.setDoubleValue( radar_range_node.getValue() * range_multiplayer2_node.getValue() );
+        range_multiplayer3_shift_node.setDoubleValue( radar_range_node.getValue() * range_multiplayer3_node.getValue() );
+        range_multiplayer4_shift_node.setDoubleValue( radar_range_node.getValue() * range_multiplayer4_node.getValue() );
 
 #	print ( "x-shift-scaled " , x_shift_scaled_node.getValue() );
 #	print ( "y-shift-scaled " , y_shift_scaled_node.getValue() );

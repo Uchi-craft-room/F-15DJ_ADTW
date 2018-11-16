@@ -31,17 +31,17 @@
         </condition>
 
         <roll-input>
-            <property>/orientation/roll-deg</property>
+            <property>orientation/roll-deg</property>
         </roll-input>
         <pitch-input>
-            <property>/orientation/pitch-deg</property>
+            <property>orientation/pitch-deg</property>
         </pitch-input>
         <compression-factor>11</compression-factor>
         <display-span>30.0</display-span>
         <divisions>5.0</divisions>
         <screen-hole>10</screen-hole>
         <lbl-pos>0</lbl-pos>
-        <zero-bar-overlength>0</zero-bar-overlength>
+        <zero-bar-overlength>15</zero-bar-overlength>
         <enable-dive-bar-angle>false</enable-dive-bar-angle>
         <enable-dynamic-origin>true</enable-dynamic-origin>
         <enable-fuselage-ref-line>false</enable-fuselage-ref-line>
@@ -118,7 +118,7 @@
         <condition>
          <and>
          <greater-than>
-            <property>/position/gear-agl-ft</property>
+            <property>position/gear-agl-ft</property>
             <value>1000</value>
          </greater-than>
          <or>
@@ -169,11 +169,11 @@
         <condition>
          <and>
          <less-than>
-            <property>/position/gear-agl-ft</property>
+            <property>position/gear-agl-ft</property>
             <value>1000</value>
          </less-than>
          <greater-than>
-            <property>/position/gear-agl-ft</property>
+            <property>position/gear-agl-ft</property>
             <value>100</value>
          </greater-than>
          <or>
@@ -191,7 +191,7 @@
         </and>
         </condition>
         <input>
-            <property>/position/gear-agl-ft</property>
+            <property>position/gear-agl-ft</property>
             <factor>1</factor>
             <max>2500</max>
             <min>-500</min>
@@ -225,7 +225,7 @@
         <condition>
          <and>
          <less-than>
-            <property>/position/gear-agl-ft</property>
+            <property>position/gear-agl-ft</property>
             <value>100</value>
          </less-than>
          <or>
@@ -243,7 +243,7 @@
         </and>
         </condition>
         <input>
-            <property>/position/gear-agl-ft</property>
+            <property>position/gear-agl-ft</property>
             <factor>1</factor>
             <max>100</max>
             <min>  0</min>
@@ -278,7 +278,7 @@
         <condition>
          <and>
          <less-than>
-            <property>/position/gear-agl-ft</property>
+            <property>position/gear-agl-ft</property>
             <value>1000</value>
          </less-than>
          <or>
@@ -318,7 +318,7 @@
         </and>
         </condition>
         <input>
-            <property>/velocities/airspeed-kt</property>
+            <property>velocities/airspeed-kt</property>
             <factor>-1</factor>
             <max>0</max>
             <min>-2000</min>
@@ -362,7 +362,7 @@
         </and>
         </condition>
         <input>
-            <property>/velocities/airspeed-kt</property>
+            <property>velocities/airspeed-kt</property>
             <factor>-1</factor>
             <max>0</max>
             <min>-2000</min>
@@ -413,7 +413,7 @@
         </condition>
 
         <input>
-            <property>/velocities/vertical-speed-fps</property>
+            <property>velocities/vertical-speed-fps</property>
             <factor>60</factor>
             <max>1000</max>
             <min>-2000</min>
@@ -836,7 +836,7 @@
          </greater-than>
         </condition>
         <input>
-            <property>/accelerations/pilot/z-accel-fps_sec</property>
+            <property>accelerations/pilot/z-accel-fps_sec</property>
             <factor>-0.03108095</factor>
             <damp>1.0</damp>
         </input>
@@ -974,7 +974,7 @@
          </greater-than>
         </condition>
         <input>
-            <property>/velocities/mach</property>
+            <property>velocities/mach</property>
         </input>
         <format>%4.1f</format>
         <halign>left</halign>
@@ -1006,12 +1006,12 @@
    <condition>
     <and>
        <less-than>
-         <property>/position/gear-agl-ft</property>
+         <property>position/gear-agl-ft</property>
          <value>1300</value>
        </less-than>
 
        <less-than>
-         <property>/velocities/vertical-speed-fps</property>
+         <property>velocities/vertical-speed-fps</property>
          <value>-50</value>
        </less-than>
          <greater-than>
@@ -1045,12 +1045,12 @@
    <condition>
     <and>
        <less-than>
-         <property>/position/gear-agl-ft</property>
+         <property>position/gear-agl-ft</property>
          <value>1300</value>
        </less-than>
 
        <less-than>
-         <property>/velocities/vertical-speed-fps</property>
+         <property>velocities/vertical-speed-fps</property>
          <value>-50</value>
        </less-than>
          <greater-than>
@@ -1252,7 +1252,7 @@
         <width>18</width>
         <height>8</height>
         <input>
-            <property>/orientation/heading-deg</property>
+            <property>orientation/heading-deg</property>
         </input>
         <format>%4.0f</format>
         <halign>center</halign>
@@ -1266,7 +1266,7 @@
         <width>18</width>
         <height>8</height>
         <input>
-            <property>/velocities/airspeed-kt</property>
+            <property>velocities/airspeed-kt</property>
         </input>
         <format>%4.0f</format>
         <halign>left</halign>
@@ -1281,7 +1281,7 @@
         <width>22</width>
         <height>8</height>
         <input>
-            <property>/position/altitude-ft</property>
+            <property>position/altitude-ft</property>
         </input>
         <format>%4.0f</format>
         <halign>right</halign>

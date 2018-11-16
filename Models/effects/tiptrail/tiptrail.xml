@@ -11,7 +11,7 @@
     <condition>
       <and>
         <greater-than>
-          <property>/orientation/alpha-deg</property>
+          <property>orientation/alpha-deg</property>
           <value>13</value>
         </greater-than>
         <greater-than>
@@ -58,7 +58,7 @@
 
     <counter>
       <particles-per-sec>
-        <property>/velocities/airspeed-kt</property>
+        <property>velocities/airspeed-kt</property>
         <factor>5</factor>
         <offset>75</offset>
       </particles-per-sec>

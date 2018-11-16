@@ -4,8 +4,8 @@
 
   <sim include="Nasal/views.xml">
 
-    <aircraft-version>1.0</aircraft-version>
-    <status>Ver.1.5</status>
+    <aircraft-version>1.6</aircraft-version>
+    <status>Ver.1.6</status>
 
     <fuel-fraction>1.0</fuel-fraction>
 
@@ -47,10 +47,14 @@
         <int type="int">0</int>  <!-- 5 immat -->
         <int type="bool">0</int> <!-- 6 smoke -->
         <int type="int">0</int>  <!-- 7 color -->
-        <float n="0" alias="/instrumentation/doors/crew/position-norm"/>
-        <float n="2" alias="/surface-positions/speedbrake-pos-norm"/>
-        <int n="8" alias="/consumables/fuel/ext-tank-ctr-selected"/>
-        <int n="9" alias="/consumables/fuel/ext-tank-wing-selected"/>
+        <float n="0" alias="instrumentation/doors/crew/position-norm"/>
+        <float n="1" alias="surface-positions/speedbrake-pos-norm"/>
+        <float n="2" alias="engines/engine[0]/out-of-fuel"/>
+        <float n="3" alias="engines/engine[0]/afterburner"/>
+        <float n="2" alias="engines/engine[1]/out-of-fuel"/>
+        <float n="3" alias="engines/engine[1]/afterburner"/>
+        <int n="8" alias="consumables/fuel/ext-tank-ctr-selected"/>
+        <int n="9" alias="consumables/fuel/ext-tank-wing-selected"/>
       </generic>
     </multiplay>
 
