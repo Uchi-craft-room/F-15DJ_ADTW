@@ -6,10 +6,6 @@
 
     <fuel-fraction>1.0</fuel-fraction>
 
-    <startup>
-      <splash-texture>Aircraft/F-15DJ_ADTW/F-15DJ_ADTW-splash.png</splash-texture>
-    </startup>
-
     <sound>
       <path archive="y">Aircraft/F-15DJ_ADTW/Sounds/F-15DJ_ADTW-sound.xml</path>
     </sound>
@@ -146,6 +142,7 @@
     <F-15DJ_ADTW>
       <file>Aircraft/F-15DJ_ADTW/Nasal/electrical.nas</file>
       <file>Aircraft/F-15DJ_ADTW/Nasal/light.nas</file>
+      <file>Aircraft/F-15DJ_ADTW/Nasal/light-manager.nas</file>
       <file>Aircraft/F-15DJ_ADTW/Nasal/liveries.nas</file>
       <file>Aircraft/F-15DJ_ADTW/Nasal/immat.nas</file>
       <file>Aircraft/F-15DJ_ADTW/Nasal/instruments.nas</file>
